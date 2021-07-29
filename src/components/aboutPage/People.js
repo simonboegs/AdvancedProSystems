@@ -1,8 +1,8 @@
 import * as React from "React";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+//import "bootstrap";
 import blank_person from "./../../images/blank_person.png";
 import { Card } from "../homePage/Card";
+const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
 
 export function People(props) {
   return (

@@ -1,7 +1,6 @@
 import * as React from "React";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
 import { useEffect } from "react";
+const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
 
 export function NavBar(props) {
   return (

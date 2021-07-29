@@ -24,7 +24,7 @@ const HomePage = () => {
       <div className="container-sm">
         <CardGroup imgHeight="200px" padding={padding}/>
         <CredentialGroup height="400px" padding={padding}/>
-        <FAQAccordian height="800px" padding={padding}/>
+        {/* <FAQAccordian height="800px" padding={padding}/> */}
       </div>
     </div>
   );

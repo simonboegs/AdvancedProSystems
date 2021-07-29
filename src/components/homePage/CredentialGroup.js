@@ -1,7 +1,8 @@
 import * as React from "React";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap";
 import { CredentialCard } from "./CredentialCard";
+const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
 
 export function CredentialGroup(props) {
   return (

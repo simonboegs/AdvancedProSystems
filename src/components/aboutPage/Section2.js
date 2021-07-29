@@ -1,7 +1,11 @@
 import * as React from "React";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
 import pic from "../../images/random3.jpeg"
+// if (typeof window !== `undefined`) {
+//   const bootstrap = require("bootstrap/dist/css/bootstrap.min.css");
+// }
+const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
+//import "bootstrap";
+
 
 export function Section2(props) {
   return (

@@ -1,7 +1,7 @@
 import * as React from "React";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+//import "bootstrap";
 import pic from "../../images/hero-services-01a.jpg"
+const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
 
 export function Section2(props) {
   return (
