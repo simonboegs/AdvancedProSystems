@@ -1,4 +1,4 @@
-import * as React from "React";
+import * as React from "react";
 //import "bootstrap";
 import pic from "../../images/hero-services-01a.jpg"
 const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null

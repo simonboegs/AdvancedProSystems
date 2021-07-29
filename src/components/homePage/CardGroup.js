@@ -1,4 +1,4 @@
-import * as React from "React";
+import * as React from "react";
 //import "bootstrap";
 import { Card } from "./Card";
 import card1Img from "../../images/card1-01a.jpg";

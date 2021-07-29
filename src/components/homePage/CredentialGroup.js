@@ -1,4 +1,4 @@
-import * as React from "React";
+import * as React from "react";
 //import "bootstrap/dist/css/bootstrap.min.css";
 //import "bootstrap";
 import { CredentialCard } from "./CredentialCard";

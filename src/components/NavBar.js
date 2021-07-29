@@ -1,4 +1,4 @@
-import * as React from "React";
+import * as React from "react";
 import { useEffect } from "react";
 const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
 
