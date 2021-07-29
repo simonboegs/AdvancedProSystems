@@ -20,7 +20,7 @@ export function CardGroup(props) {
       </div>
       <div className="col">
         <Card
-            title="Installations, Calibrations, and Validations"
+            title="Warranty, Maintenance, and Service Plans"
             body=""
             img={card2Img}
             imgHeight={props.imgHeight}
@@ -28,7 +28,7 @@ export function CardGroup(props) {
       </div>
       <div className="col">
         <Card
-            title="Installations, Calibrations, and Validations"
+            title="Bioprocessing Parts and Equipment"
             body=""
             img={card3Img}
             imgHeight={props.imgHeight}
