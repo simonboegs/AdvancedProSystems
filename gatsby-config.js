@@ -4,4 +4,5 @@ module.exports = {
     title: "AdvancedProSystems",
   },
   plugins: [],
+  pathPrefix: "/AdvancedProSystems",
 };

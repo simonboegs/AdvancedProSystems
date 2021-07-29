@@ -15,7 +15,7 @@ const HomePage = () => {
         <NavBar />
       </div>
       <Hero 
-        height="600px" 
+        height="400px" 
         img={heroImg} 
         title="Advanced Processing Systems - Complete Service Bioprocessing Solutions" 
         body="We provide complete service solutions for your bioprocessing needs." 
