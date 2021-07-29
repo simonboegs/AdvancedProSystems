@@ -16,7 +16,7 @@ export function People(props) {
       <div className="col-7">
         <div className="row gx-5">
           <div className="col">
-            <Card img={blank_person} noButton imgHeight="350px" title="Doug"/>
+            <Card img={blank_person} noButton imgHeight="350px" title="Douglas Willoughby"/>
           </div>
           <div className="col">
             <Card img={blank_person} noButton imgHeight="350px" title="Tim Erisman"/>
