@@ -3,6 +3,6 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "AdvancedProSystems",
   },
-  plugins: [],
+  plugins: ["react"],
   pathPrefix: "/AdvancedProSystems",
 };
