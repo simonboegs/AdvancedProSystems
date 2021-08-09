@@ -3,6 +3,7 @@ import { NavBar } from "../components/NavBar";
 import { Hero } from "../components/homePage/Hero";
 import { CardGroup } from "../components/homePage/CardGroup";
 import { CredentialGroup } from "../components/homePage/CredentialGroup";
+import { Footer } from "../components/Footer";
 import { Section } from "../components/Section";
 import heroImg from "../images/hero-home-01a-big.jpg";
 import padding from "./index";
@@ -93,6 +94,7 @@ const ServicesPage = () => {
           imgCols="7"
           content={content.section3}
         />
+        <Footer />
       </div>
     </div>
   );

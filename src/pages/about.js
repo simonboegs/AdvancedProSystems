@@ -2,6 +2,7 @@ import * as React from "react";
 import { NavBar } from "../components/NavBar";
 import { Hero } from "../components/homePage/Hero";
 import { People } from "../components/aboutPage/People";
+import { Footer } from "../components/Footer";
 import heroImg from "../images/hero-home-01a-big.jpg";
 import padding from "./index";
 import { Section } from "../components/Section";
@@ -50,6 +51,7 @@ const AboutPage = () => {
           imgCols="7"
           content={content.section2}
         />
+        <Footer />
       </div>
     </div>
   );
