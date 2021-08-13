@@ -1,6 +1,7 @@
 import * as React from "react";
 //import "bootstrap";
-const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
+const bootstrap =
+  typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 
 export function Hero(props) {
   return (
@@ -8,14 +9,13 @@ export function Hero(props) {
       className="row align-items-center justify-content-center"
       style={{
         height: props.height,
-        marginBottom: props.marginBottom,
         backgroundImage: `url(${props.img})`,
         backgroundSize: "cover",
         backgroundBlendMode: "darken",
-        backgroundColor: "rgba(0,0,0,0.6)"
+        backgroundColor: "rgba(0,0,0,0.6)",
       }}
     >
-      <div className="col-l-6 offset-col-3 text-center text-light" >
+      <div className="col-l-6 offset-col-3 text-center text-light">
         <div className="row">
           <div className="col">
             <h1>{props.title}</h1>

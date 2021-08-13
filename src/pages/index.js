@@ -7,6 +7,7 @@ import { FAQAccordian } from "../components/homePage/FAQAccordian";
 import { Section } from "../components/Section";
 import heroImg from "../images/hero-home-01a-big.jpg";
 import { Footer } from "../components/Footer";
+import { Layout } from "../components/Layout";
 
 export const padding = "40px";
 
@@ -35,38 +36,18 @@ const content = {
 
 const HomePage = () => {
   return (
-    <div className="container-fluid">
-      <div className="container-sm">
-        <NavBar />
-      </div>
+    <Layout>
       <Hero
         height="400px"
         img={heroImg}
         title="Advanced Processing Systems - Complete Service Bioprocessing Solutions"
         body="We provide complete service solutions for your bioprocessing needs."
-        marginBottom={padding}
       />
-      <div className="container-sm">
-        <CardGroup imgHeight="200px" padding={padding} />
-        <Section
-          padding={padding}
-          img={heroImg}
-          imgSide="left"
-          imgCols="7"
-          content={content.section1}
-        />
-        <CredentialGroup height="400px" padding={padding} />
-        {/* <FAQAccordian height="800px" padding={padding}/> */}
-        <Section
-          padding={padding}
-          img={heroImg}
-          imgSide="right"
-          imgCols="7"
-          content={content.section2}
-        />
-        <Footer />
-      </div>
-    </div>
+      <CardGroup imgHeight="200px" />
+      <Section img={heroImg} imgSide="left" imgCols="7" content={content.section1} />
+      <CredentialGroup height="400px" />
+      <Section img={heroImg} imgSide="right" imgCols="7" content={content.section2} />
+    </Layout>
   );
 };
 

@@ -4,15 +4,19 @@ const bootstrap =
 
 export function Footer(props) {
   return (
-    <div className="row">
-      <div className="col">
-        <p className="text-start">©2021 All rights reserved</p>
+    <section style={{ background: props.bgColor }}>
+      <div className="container-lg">
+        <div className="row">
+          <div className="col">
+            <p className="text-start">©2021 All rights reserved</p>
+          </div>
+          <div className="col">
+            <p className="text-end">
+              Web by <a href="https://getleadsb2b.com">GetLeadsB2B</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="col">
-        <p className="text-end">
-          Web by <a href="https://getleadsb2b.com">GetLeadsB2B</a>
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }

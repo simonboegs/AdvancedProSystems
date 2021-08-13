@@ -1,6 +1,7 @@
 import * as React from "react";
 import { NavBar } from "../components/NavBar";
 import { Hero } from "../components/homePage/Hero";
+import { Footer } from "../components/Footer";
 import heroImg from "../images/hero-home-01a-big.jpg";
 import padding from "./index";
 
@@ -82,6 +83,7 @@ const ContactPage = () => {
           <button className="">Submit</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
