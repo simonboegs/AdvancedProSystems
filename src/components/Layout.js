@@ -7,13 +7,14 @@ const bootstrap =
 const viewportContext = React.createContext({});
 
 export function Layout(props) {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const handleWindowResize = () => {
-    setWidth(window.innerWidth);
-  };
+  const [width, setWidth] = React.useState(0);
   React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
+    if (window !== `undefined`) {
+      setWidth(window.innerWidth);
+      const handleWindowResize = () => setWidth(window.innerWidth);
+      window.addEventListener("resize", handleWindowResize);
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }
   }, []);
 
   return (
