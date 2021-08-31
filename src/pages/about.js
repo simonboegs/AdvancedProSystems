@@ -8,6 +8,7 @@ import padding from "./index";
 import { Section } from "../components/Section";
 import imgSection1 from "../images/random1.jpeg";
 import imgSection2 from "../images/random3.jpeg";
+import { Layout } from "../components/Layout";
 
 const content = {
   section1: (
@@ -30,30 +31,24 @@ const content = {
 
 const AboutPage = () => {
   return (
-    <div className="container-fluid">
-      <div className="container-sm">
-        <NavBar />
-      </div>
+    <Layout>
       <Hero height="200px" img={heroImg} title="About Us" body="" marginBottom={padding} />
-      <div className="container-sm">
-        <People padding="40px" />
-        <Section
-          padding="40px"
-          img={imgSection1}
-          imgSide="left"
-          imgCols="7"
-          content={content.section1}
-        />
-        <Section
-          padding="40px"
-          img={imgSection2}
-          imgSide="right"
-          imgCols="7"
-          content={content.section2}
-        />
-        <Footer />
-      </div>
-    </div>
+      {/* <People padding="40px" /> */}
+      <Section
+        padding="40px"
+        img={imgSection1}
+        imgSide="left"
+        imgCols="7"
+        content={content.section1}
+      />
+      <Section
+        padding="40px"
+        img={imgSection2}
+        imgSide="right"
+        imgCols="7"
+        content={content.section2}
+      />
+    </Layout>
   );
 };
 

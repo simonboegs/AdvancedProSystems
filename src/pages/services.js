@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Layout } from "../components/Layout";
 import { NavBar } from "../components/NavBar";
 import { Hero } from "../components/homePage/Hero";
 import { CardGroup } from "../components/homePage/CardGroup";
@@ -61,10 +62,7 @@ const content = {
 
 const ServicesPage = () => {
   return (
-    <div className="container-fluid">
-      <div className="container-sm">
-        <NavBar />
-      </div>
+    <Layout>
       <Hero
         height="200px"
         img={heroImg}
@@ -72,31 +70,28 @@ const ServicesPage = () => {
         body=""
         marginBottom={padding}
       />
-      <div className="container-sm">
-        <Section
-          padding="40px"
-          img={imgSection1}
-          imgSide="left"
-          imgCols="7"
-          content={content.section1}
-        />
-        <Section
-          padding="40px"
-          img={imgSection2}
-          imgSide="right"
-          imgCols="7"
-          content={content.section2}
-        />
-        <Section
-          padding="40px"
-          img={imgSection3}
-          imgSide="left"
-          imgCols="7"
-          content={content.section3}
-        />
-        <Footer />
-      </div>
-    </div>
+      <Section
+        padding="40px"
+        img={imgSection1}
+        imgSide="left"
+        imgCols="7"
+        content={content.section1}
+      />
+      <Section
+        padding="40px"
+        img={imgSection2}
+        imgSide="right"
+        imgCols="7"
+        content={content.section2}
+      />
+      <Section
+        padding="40px"
+        img={imgSection3}
+        imgSide="left"
+        imgCols="7"
+        content={content.section3}
+      />
+    </Layout>
   );
 };
 

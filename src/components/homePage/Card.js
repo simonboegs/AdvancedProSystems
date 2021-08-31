@@ -7,7 +7,7 @@ export function Card(props) {
   const { width } = useViewport();
   const breakpoint = 768;
   return (
-    <div className="card border-0">
+    <div className="card border-0" style={{ background: "" }}>
       <img
         src={props.img}
         alt="yo"

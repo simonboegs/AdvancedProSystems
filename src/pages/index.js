@@ -43,7 +43,7 @@ const HomePage = () => {
         title="Advanced Processing Systems - Complete Service Bioprocessing Solutions"
         body="We provide complete service solutions for your bioprocessing needs."
       />
-      <CardGroup imgHeight="200px" />
+      <CardGroup bgColor="" imgHeight="200px" />
       <Section img={heroImg} imgSide="left" imgCols="7" content={content.section1} />
       <CredentialGroup height="400px" />
       <Section img={heroImg} imgSide="right" imgCols="7" content={content.section2} />
