@@ -47,29 +47,31 @@ export function CardGroup(props) {
 
   const mobile = (
     <div className="container">
-      <div className="row">
-        <Card
-          title="Installations, Calibrations, and Validations"
-          body=""
-          img={card1Img}
-          imgHeight={props.imgHeight}
-        />
-      </div>
-      <div className="row">
-        <Card
-          title="Warranty, Maintenance, and Service Plans"
-          body=""
-          img={card2Img}
-          imgHeight={props.imgHeight}
-        />
-      </div>
-      <div className="row">
-        <Card
-          title="Bioprocessing Parts and Equipment"
-          body=""
-          img={card3Img}
-          imgHeight={props.imgHeight}
-        />
+      <div className="row gy-5 text-center">
+        <div className="col-12">
+          <Card
+            title="Installations, Calibrations, and Validations"
+            body=""
+            img={card1Img}
+            imgHeight={props.imgHeight}
+          />
+        </div>
+        <div className="col-12">
+          <Card
+            title="Warranty, Maintenance, and Service Plans"
+            body=""
+            img={card2Img}
+            imgHeight={props.imgHeight}
+          />
+        </div>
+        <div className="col-12">
+          <Card
+            title="Bioprocessing Parts and Equipment"
+            body=""
+            img={card3Img}
+            imgHeight={props.imgHeight}
+          />
+        </div>
       </div>
     </div>
   );

@@ -50,15 +50,18 @@ Section props
 */
 export function Section(props) {
   const { width } = useViewport();
-  const breakpoint = 768;
-
+  const breakpoint = 992;
   const desktop = (
     <div className="container-lg">{props.imgSide == "left" ? left(props) : right(props)}</div>
   );
   const mobile = (
     <div className="container">
-      <img src={props.img} style={{ width: "100%" }} />
-      {props.content}
+      <div className="row gy-2">
+        <div className="col-12">
+          <img src={props.img} style={{ width: "100%" }} />
+        </div>
+        <div className="col-12">{props.content}</div>
+      </div>
     </div>
   );
   return (

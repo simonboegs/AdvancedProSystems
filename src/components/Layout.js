@@ -20,8 +20,8 @@ export function Layout(props) {
   return (
     <viewportContext.Provider value={{ width }}>
       <div className="wrapper">
-        <header>
-          <NavBar />
+        <header className="sticky-top">
+          <NavBar bgColor="white" />
         </header>
         <main>{props.children}</main>
         <footer>
