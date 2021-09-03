@@ -33,7 +33,7 @@ export function NavBar(props) {
         <Link to="/" className="d-flex align-items-center me-md-auto text-decoration-none">
           <img class="bi me-2" height="100px" src={logoImg} />
         </Link>
-        <ul className="nav nav-pills">
+        <ul className="nav nav-pills align-items-center">
           <li className="nav-item">
             <Link to="/" className="nav-link" activeClassName="active" aria-current="page">
               Home
@@ -49,7 +49,7 @@ export function NavBar(props) {
               Services
             </Link>
           </li>
-          <li className="nav-item border border-primary rounded-3 ms-2">
+          <li className="nav-item border border-3 border-primary rounded-2 ms-2">
             <Link to="/contact" className="nav-link" activeClassName="active" aria-current="page">
               <strong>Contact</strong>
             </Link>

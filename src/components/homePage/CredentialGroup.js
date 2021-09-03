@@ -7,7 +7,7 @@ const bootstrap =
 
 export function CredentialGroup(props) {
   return (
-    <section style={{ background: props.bgColor, padding: "20px 0 20px 0" }}>
+    <section style={{ background: props.bgColor, padding: "70px 0 70px 0" }}>
       <div className="container-lg">
         <div
           className="row align-items-center"

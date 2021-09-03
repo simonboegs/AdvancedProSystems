@@ -36,17 +36,30 @@ const content = {
 
 const HomePage = () => {
   return (
-    <Layout>
+    <Layout footerBgColor="rgb(229, 221, 235, 1)">
       <Hero
         height="400px"
         img={heroImg}
         title="Advanced Processing Systems - Complete Service Bioprocessing Solutions"
         body="We provide complete service solutions for your bioprocessing needs."
       />
-      <CardGroup bgColor="" imgHeight="200px" />
-      <Section img={heroImg} imgSide="left" imgCols="7" content={content.section1} />
-      <CredentialGroup height="400px" />
-      <Section img={heroImg} imgSide="right" imgCols="7" content={content.section2} />
+      <CardGroup bgColor="rgb(230, 255, 253, .2)" imgHeight="200px" />
+      {/* <CardGroup imgHeight="200px" /> */}
+      <Section
+        bgColor="rgb(220, 246, 255,1)"
+        img={heroImg}
+        imgSide="left"
+        imgCols="7"
+        content={content.section1}
+      />
+      <CredentialGroup bgColor="rgb(254, 255, 230, .5)" height="400px" />
+      <Section
+        bgColor="rgb(229, 221, 235, 1)"
+        img={heroImg}
+        imgSide="right"
+        imgCols="7"
+        content={content.section2}
+      />
     </Layout>
   );
 };

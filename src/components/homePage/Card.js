@@ -7,7 +7,7 @@ export function Card(props) {
   const { width } = useViewport();
   const breakpoint = 768;
   return (
-    <div className="card border-0" style={{ background: "" }}>
+    <div className="card border-0 " style={{ background: "" }}>
       <img
         src={props.img}
         alt="yo"
@@ -18,7 +18,11 @@ export function Card(props) {
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.body}</p>
         {props.noButton ? null : (
-          <a href="/something" className="btn btn-primary">
+          <a
+            href="/something"
+            className="btn btn-primary"
+            style={{ background: "rgb(55, 105, 204)" }}
+          >
             Go somewhere
           </a>
         )}

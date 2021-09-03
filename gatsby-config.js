@@ -3,6 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "AdvancedProSystems",
   },
-  plugins: ["react"],
+  plugins: [
+    "react",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
+  ],
   pathPrefix: "/AdvancedProSystems",
 };

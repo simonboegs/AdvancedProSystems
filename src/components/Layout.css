@@ -1,0 +1,9 @@
+.wrapper {
+  background-image: url("../images/bg-less.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blend-mode: "lighten"; */
+  /* background-color: "rgba(0,0,0,.1)"; */
+}

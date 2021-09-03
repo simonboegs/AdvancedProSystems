@@ -15,7 +15,7 @@ export function CardGroup(props) {
   const breakpoint = 768;
 
   const desktop = (
-    <div className="container-lg">
+    <div className="container-xl">
       <div className="row">
         <div className="col">
           <Card
@@ -76,7 +76,7 @@ export function CardGroup(props) {
     </div>
   );
   return (
-    <section style={{ background: props.bgColor, padding: "20px 0 20px 0" }}>
+    <section style={{ background: props.bgColor, padding: "70px 0 70px 0" }}>
       {width > breakpoint ? desktop : mobile}
     </section>
   );

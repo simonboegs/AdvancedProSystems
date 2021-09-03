@@ -14,6 +14,11 @@ export function Hero(props) {
         backgroundBlendMode: "darken",
         backgroundColor: "rgba(0,0,0,0.6)",
       }}
+      // style={{
+      //   background: "rgb(220, 246, 255,1)",
+      //   height: props.height,
+      //   backgroundSize: "cover",
+      // }}
     >
       <div className="col-l-6 offset-col-3 text-center text-light">
         <div className="row">

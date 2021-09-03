@@ -42,6 +42,7 @@ const AboutPage = () => {
         content={content.section1}
       />
       <Section
+        bgColor="rgb(255,255,255,.5)"
         padding="40px"
         img={imgSection2}
         imgSide="right"

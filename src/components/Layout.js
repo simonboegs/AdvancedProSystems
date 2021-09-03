@@ -1,6 +1,8 @@
 import * as React from "react";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
+import "./Layout.css";
+import "../styles.scss";
 const bootstrap =
   typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 
@@ -21,11 +23,11 @@ export function Layout(props) {
     <viewportContext.Provider value={{ width }}>
       <div className="wrapper">
         <header className="sticky-top">
-          <NavBar bgColor="white" />
+          <NavBar bgColor="rgb(255,255,255,.95)" />
         </header>
         <main>{props.children}</main>
         <footer>
-          <Footer />
+          <Footer bgColor={props.footerBgColor} />
         </footer>
       </div>
     </viewportContext.Provider>

@@ -65,7 +65,7 @@ export function Section(props) {
     </div>
   );
   return (
-    <section style={{ background: props.bgColor, padding: "20px 0 20px 0" }}>
+    <section style={{ background: props.bgColor, padding: "70px 0 70px 0" }}>
       {width > breakpoint ? desktop : mobile}
     </section>
   );
