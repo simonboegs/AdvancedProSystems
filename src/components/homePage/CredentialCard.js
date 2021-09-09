@@ -1,14 +1,19 @@
 import * as React from "react";
-//import "bootstrap";
-const bootstrap = typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null
+import "./CredentialCard.css";
+const bootstrap =
+  typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 
 export function CredentialCard(props) {
-  return (
-    <div class="card">
-      <div class="card-body">
+  const card = (
+    <div className="card">
+      <div className="card-body">
         <h4 className="card-title">{props.title}</h4>
         <p className="card-text">{props.text}</p>
       </div>
     </div>
   );
+  // React.useEffect(() => {
+  //   card.addEventListener("mouseenter")
+  // });
+  return card;
 }

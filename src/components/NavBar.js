@@ -49,7 +49,10 @@ export function NavBar(props) {
               Services
             </Link>
           </li>
-          <li className="nav-item border border-3 border-primary rounded-2 ms-2">
+          <li
+            className="nav-item border border-3 border-primary ms-2"
+            style={{ borderRadius: "10px" }}
+          >
             <Link to="/contact" className="nav-link" activeClassName="active" aria-current="page">
               <strong>Contact</strong>
             </Link>

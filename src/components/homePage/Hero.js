@@ -1,12 +1,15 @@
 import * as React from "react";
+import { useViewport } from "./../Layout";
 //import "bootstrap";
 const bootstrap =
   typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 
 export function Hero(props) {
-  return (
+  const { width } = useViewport();
+  const breakpoint = 768;
+  const desktop = (
     <div
-      className="row align-items-center justify-content-center"
+      className=""
       style={{
         height: props.height,
         backgroundImage: `url(${props.img})`,
@@ -14,24 +17,47 @@ export function Hero(props) {
         backgroundBlendMode: "darken",
         backgroundColor: "rgba(0,0,0,0.6)",
       }}
-      // style={{
-      //   background: "rgb(220, 246, 255,1)",
-      //   height: props.height,
-      //   backgroundSize: "cover",
-      // }}
     >
-      <div className="col-l-6 offset-col-3 text-center text-light">
-        <div className="row">
-          <div className="col">
-            <h1>{props.title}</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <h2>{props.body}</h2>
-          </div>
-        </div>
+      <div
+        className="container-sm text-light"
+        style={{
+          height: "100%",
+          paddingTop: "100px",
+        }}
+      >
+        <h1 style={{ paddingBottom: "20px" }} className="">
+          {props.title}
+        </h1>
+        <h4 className="fw-light">{props.body}</h4>
       </div>
     </div>
   );
+
+  const mobile = (
+    <div
+      className=""
+      style={{
+        height: props.height,
+        backgroundImage: `url(${props.img})`,
+        backgroundSize: "cover",
+        backgroundBlendMode: "darken",
+        backgroundColor: "rgba(0,0,0,0.6)",
+      }}
+    >
+      <div
+        className="container-sm text-light"
+        style={{
+          height: "100%",
+          paddingTop: "100px",
+        }}
+      >
+        <h1 style={{ paddingBottom: "20px" }} className="">
+          {props.title}
+        </h1>
+        <h4 className="fw-light">{props.body}</h4>
+      </div>
+    </div>
+  );
+
+  return <section>{width < breakpoint ? mobile : desktop}</section>;
 }
