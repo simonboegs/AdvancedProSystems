@@ -1,0 +1,19 @@
+- path: "/home"
+  content:
+    - component: Hero
+      content:
+        img: src/images/hero-img.png
+        title: md//AdvancedProSystems
+        secondary:
+    - component: Section
+      bgColor: lightblue
+      imgSide: left
+      content:
+        img: src/images/section-img.png
+        title: md//This is the section title.
+        body: md//This is can be markdown text.
+    - component: CredentialGroup
+      bgColor: gray
+      - card:
+        img: whatever
+        title: This the first card.
