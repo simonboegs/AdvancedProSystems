@@ -19,13 +19,13 @@ export function Hero(props) {
       }}
     >
       <div
-        className="container-sm text-light"
+        className="container-sm text-light text-center"
         style={{
           height: "100%",
           paddingTop: "100px",
         }}
       >
-        <h1 style={{ paddingBottom: "20px" }} className="">
+        <h1 style={{ paddingBottom: "20px" }} className="fw-bolder">
           {props.title}
         </h1>
         <h4 className="fw-light">{props.body}</h4>

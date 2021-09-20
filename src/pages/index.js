@@ -36,7 +36,7 @@ const content = {
 
 const HomePage = () => {
   return (
-    <Layout footerBgColor="rgb(229, 221, 235, 1)">
+    <Layout footerBgColor="rgb(255, 255, 255, .5)">
       <Hero
         height="400px"
         img={heroImg}
@@ -46,15 +46,15 @@ const HomePage = () => {
       <CardGroup bgColor="rgb(230, 255, 253, .2)" imgHeight="200px" />
       {/* <CardGroup imgHeight="200px" /> */}
       <Section
-        bgColor="rgb(220, 246, 255,1)"
+        bgColor="rgb(255, 255, 255, .5)"
         img={heroImg}
         imgSide="left"
         imgCols="7"
         content={content.section1}
       />
-      <CredentialGroup bgColor="rgb(254, 255, 230, .5)" height="400px" />
+      <CredentialGroup bgColor="" height="400px" />
       <Section
-        bgColor="rgb(229, 221, 235, 1)"
+        bgColor="rgb(255, 255, 255, .5)"
         img={heroImg}
         imgSide="right"
         imgCols="7"

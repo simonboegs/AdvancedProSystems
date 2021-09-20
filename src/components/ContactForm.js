@@ -7,6 +7,7 @@ import {
   optionTextInput,
   dropdown,
 } from "./ContactForm.module.css";
+import TextareaAutosize from "react-textarea-autosize";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 import { StaticQuery } from "gatsby";
 const bootstrap =
@@ -37,7 +38,7 @@ export function ContactForm(props) {
     <div
       className="container"
       style={{
-        border: "3px solid gray",
+        // border: "3px solid gray",
         maxWidth: "800px",
         borderRadius: "10px",
         background: "rgb(255,255,255,.5)",
@@ -62,7 +63,7 @@ export function ContactForm(props) {
               I need to plan services for equipment I do not yet have.
             </label>
           </div>
-          <div className="col-9">
+          <div className="col-9 align-items-center">
             <input id="option3" type="radio" name="yo" value="yo" />
             <label className={optionLabel} for="option3">
               I need equipment!
@@ -70,10 +71,7 @@ export function ContactForm(props) {
           </div>
           <div className="col-9">
             <input id="option3" type="radio" name="yo" value="yo" />
-            <input
-              className={optionTextInput}
-              placeholder="Please tell us about your needs!"
-            ></input>
+            <TextareaAutosize className={optionTextInput} minRows="1" />
           </div>
         </div>
         <div className="row justify-content-center py-2 gy-2">

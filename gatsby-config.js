@@ -11,6 +11,13 @@ module.exports = {
         implementation: require("sass"),
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Heebo`],
+        display: "swap",
+      },
+    },
   ],
   pathPrefix: "/AdvancedProSystems",
 };
