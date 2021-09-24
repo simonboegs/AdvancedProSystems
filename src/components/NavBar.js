@@ -2,8 +2,10 @@ import * as React from "react";
 import { Link } from "gatsby";
 import logoImg from "../images/logo.png";
 import justify from "../images/justify.svg";
+import x from "../images/x-lg.svg";
 import { useViewport } from "./Layout";
 import OffCanvas from "react-aria-offcanvas";
+import { overlay, hamburger, navItem } from "./NavBar.module.css";
 const bootstrap =
   typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 
@@ -83,8 +85,8 @@ export function NavBar(props) {
         </Link>
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <button onClick={open} className="navbar-toggler">
-              <img height="40px" src={justify} />
+            <button onClick={isOpen ? close : open} className={hamburger}>
+              {isOpen ? <img height="30px" src={x} /> : <img height="40px" src={justify} />}
             </button>
             <OffCanvas
               style={{
@@ -92,6 +94,9 @@ export function NavBar(props) {
                   background: "white",
                   borderRadius: "5px",
                   marginTop: "85px",
+                },
+                overlay: {
+                  backgroundColor: "rgb(0, 0, 0, 0.5)",
                 },
               }}
               isOpen={isOpen}
@@ -102,12 +107,12 @@ export function NavBar(props) {
             >
               <div className="" style={{ height: "100%" }}>
                 <ul className="nav flex-column nav-pills">
-                  <li className="nav-item active">
+                  <li className={navItem}>
                     <Link to="/" className="nav-link" activeClassName="active" aria-current="page">
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className={navItem}>
                     <Link
                       to="/about"
                       className="nav-link"
@@ -117,7 +122,7 @@ export function NavBar(props) {
                       About
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className={navItem}>
                     <Link
                       to="/services"
                       className="nav-link"
@@ -127,7 +132,7 @@ export function NavBar(props) {
                       Services
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className={navItem}>
                     <Link
                       to="/contact"
                       className="nav-link"

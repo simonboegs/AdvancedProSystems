@@ -1,0 +1,12 @@
+.overlay {
+  color: rgb(255, 255, 255, 1);
+}
+
+.hamburger {
+  border: none;
+  background: none;
+}
+
+.navItem:hover {
+  background: rgb(0, 0, 20, 0.08);
+}
