@@ -15,20 +15,39 @@ import imgSection3 from "../images/card1-01a.jpg";
 const content = {
   section1: (
     <div>
-      <h2>Installations, Calibrations, and Validations</h2>
-      <p>
-        Our calibration and validation services cover the entire spectrum of processes in your
-        facility – from analytical to process calibrations and validations.
-      </p>
-      <p>
-        Our field engineers offer accurate, reliable calibrations and validations that can respond
-        to your specific needs and requirements.
-      </p>
-      <p>
-        Most equipment can be serviced on-site. For equipment that requires highly sensitive
-        calibration devices, items can be sent to one of our controlled laboratories were our field
-        engineers will perform calibrations and validations.
-      </p>
+      <h2>Process Consulting and Calibration</h2>
+      <h3>Upstream Process Consulting</h3>
+      <ul>
+      <li>Bioreactor specification
+      <li>Sensors, Sampling solutions
+      <li>Automation
+      <li>Integration
+      </ul>
+      <h3>Downstream Process Consulting</h3>
+      <ul>
+      <li>Filtration
+      <li>Chromatography
+      <li>Separations
+      <li>Drying
+      </ul>
+      <h3>Calibration –instruments measuring</h3>
+      <ul>
+      <li>Temperature
+      <li>Pressure
+      <li>Flow
+      <li>Mass
+      <li>Optical
+      <li>Volumetric
+      <li>Dimensional
+      </ul>
+      <h3>NIST traceable “cradle to grave” calibration</h3>
+      <ul>
+      <li>Performance
+      <li>Logging
+      <li>SOPs
+      <li>Records management
+      </ul>
+      <h3>Validation – IOQ generation, execution and reports</h3>
     </div>
   ),
   section2: (
