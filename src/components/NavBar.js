@@ -55,13 +55,13 @@ export function NavBar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link" activeClassName="active" aria-current="page">
-              About
+            <Link to="/services" className="nav-link" activeClassName="active" aria-current="page">
+              Services
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-link" activeClassName="active" aria-current="page">
-              Services
+            <Link to="/about" className="nav-link" activeClassName="active" aria-current="page">
+              About
             </Link>
           </li>
           <li
