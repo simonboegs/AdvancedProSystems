@@ -50,7 +50,7 @@ export function CardGroup(props) {
       <div className="row gy-5 text-center">
         <div className="col-12">
           <Card
-            title="Installations, Calibrations, and Validations"
+            title="Process Consulting and Calibration"
             body=""
             img={card1Img}
             imgHeight={props.imgHeight}
@@ -58,7 +58,7 @@ export function CardGroup(props) {
         </div>
         <div className="col-12">
           <Card
-            title="Warranty, Maintenance, and Service Plans"
+            title="Laboratory, Industrial Service Plans"
             body=""
             img={card2Img}
             imgHeight={props.imgHeight}
@@ -66,7 +66,7 @@ export function CardGroup(props) {
         </div>
         <div className="col-12">
           <Card
-            title="Bioprocessing Parts and Equipment"
+            title="Biotech Equipment and Parts"
             body=""
             img={card3Img}
             imgHeight={props.imgHeight}
