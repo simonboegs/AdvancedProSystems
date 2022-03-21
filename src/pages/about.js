@@ -15,13 +15,12 @@ const content = {
     <div>
       <h2>APS help optimize your bioprocessing</h2>
       <p>
-        Founded in 2017 after more than 30 years of experience providing installation, calibration and integration services.
+        Founded in 2017 after more than 30 years of experience providing installation, calibration
+        and integration services.
       </p>
-      <p>
-        Our systems are designed to optimize our customers’ processes.
-      </p>
+      <p>Our systems are designed to optimize our customers’ processes.</p>
     </div>
-  )
+  ),
 };
 
 const AboutPage = () => {
@@ -35,14 +34,6 @@ const AboutPage = () => {
         imgSide="left"
         imgCols="7"
         content={content.section1}
-      />
-      <Section
-        bgColor="rgb(255,255,255,.5)"
-        padding="40px"
-        img={imgSection2}
-        imgSide="right"
-        imgCols="7"
-        content={content.section2}
       />
     </Layout>
   );

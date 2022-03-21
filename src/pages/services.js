@@ -71,12 +71,6 @@ const content = {
       </ul>
     </div>
   ),
-  section3: (
-    <div>
-      <h2>Bioprocessing Equipment</h2>
-      <p>Advanced Process Systems knows where all the equipment is!</p>
-    </div>
-  ),
 };
 
 const ServicesPage = () => {
@@ -102,13 +96,6 @@ const ServicesPage = () => {
         imgSide="right"
         imgCols="7"
         content={content.section2}
-      />
-      <Section
-        padding="40px"
-        img={imgSection3}
-        imgSide="left"
-        imgCols="7"
-        content={content.section3}
       />
     </Layout>
   );
