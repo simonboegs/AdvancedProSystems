@@ -13,20 +13,15 @@ import { Layout } from "../components/Layout";
 const content = {
   section1: (
     <div>
-      <h2>Our Goal</h2>
+      <h2>APS help optimize your bioprocessing</h2>
       <p>
-        Our mission is to lead in calibrations and validations services all around the USA. Our
-        experience and super qualified engineers help to ensure that our customers produce safe and
-        effective products -- confident that they received accurate and traceable calibrations.
+        Founded in 2017 after more than 30 years of experience providing installation, calibration and integration services.
+      </p>
+      <p>
+        Our systems are designed to optimize our customers’ processes.
       </p>
     </div>
-  ),
-  section2: (
-    <div>
-      <h2>We Want To Help Your Process!</h2>
-      <p>Talk to us! We help keep your systems running smoothly and efficiently.</p>
-    </div>
-  ),
+  )
 };
 
 const AboutPage = () => {
