@@ -58,13 +58,13 @@ const content = {
         including:
       </p>
       <ul class="list-group list-group-numbered">
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 bg-transparent">
           Same-day or next-day services, or will perform calibrations at our controlled laboratory.
         </li>
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 bg-transparent">
           Customized certificates to meet your business's unique requirements.{" "}
         </li>
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 bg-transparent">
           Program management services including documentation, certificate management, and
           maintenance scheduling.
         </li>
