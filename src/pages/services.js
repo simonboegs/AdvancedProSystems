@@ -126,8 +126,20 @@ const ServicesPage = () => {
             </ul>
           </div>
           <div className="col-5">
+            <h3>NIST traceable “cradle to grave” calibration</h3>
+            <ul>
+              <li>Performance</li>
+              <li>Logging</li>
+              <li>SOPs</li>
+              <li>Records management</li>
+            </ul>
+          </div>
+        </div>
+        <div className="row justify-content-center py-4">
+          <div className="col-5">
             <h3>Validation – IOQ generation, execution and reports</h3>
           </div>
+          <div className="col-5"></div>
         </div>
       </div>
       <Section
