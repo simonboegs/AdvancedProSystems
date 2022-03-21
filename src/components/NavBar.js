@@ -114,22 +114,22 @@ export function NavBar(props) {
                   </li>
                   <li className={navItem}>
                     <Link
-                      to="/about"
-                      className="nav-link"
-                      activeClassName="active"
-                      aria-current="page"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li className={navItem}>
-                    <Link
                       to="/services"
                       className="nav-link"
                       activeClassName="active"
                       aria-current="page"
                     >
                       Services
+                    </Link>
+                  </li>
+                  <li className={navItem}>
+                    <Link
+                      to="/about"
+                      className="nav-link"
+                      activeClassName="active"
+                      aria-current="page"
+                    >
+                      About APS
                     </Link>
                   </li>
                   <li className={navItem}>
