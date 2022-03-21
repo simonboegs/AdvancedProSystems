@@ -83,13 +83,53 @@ const ServicesPage = () => {
         body=""
         marginBottom={padding}
       />
-      <Section
+      {/* <Section
         padding="40px"
         img={imgSection1}
         imgSide="left"
         imgCols="7"
         content={content.section1}
-      />
+      /> */}
+      <div className="container-lg my-4">
+        <h2>Process Consulting and Calibration</h2>
+        <div className="row justify-content-center py-4">
+          <div className="col-5">
+            <h3>Upstream Process Consulting</h3>
+            <ul>
+              <li>Bioreactor specification</li>
+              <li>Sensors, Sampling solutions</li>
+              <li>Automation</li>
+              <li>Integration</li>
+            </ul>
+          </div>
+          <div className="col-5">
+            <h3>Downstream Process Consulting</h3>
+            <ul>
+              <li>Filtration</li>
+              <li>Chromatography</li>
+              <li>Separations</li>
+              <li>Drying</li>
+            </ul>
+          </div>
+        </div>
+        <div className="row justify-content-center py-4">
+          <div className="col-5">
+            <h3>Calibration –instruments measuring</h3>
+            <ul>
+              <li>Temperature</li>
+              <li>Pressure</li>
+              <li>Flow</li>
+              <li>Mass</li>
+              <li>Optical</li>
+              <li>Volumetric</li>
+              <li>Dimensional</li>
+            </ul>
+          </div>
+          <div className="col-5">
+            <h3>Validation – IOQ generation, execution and reports</h3>
+          </div>
+        </div>
+      </div>
       <Section
         padding="40px"
         img={imgSection2}
