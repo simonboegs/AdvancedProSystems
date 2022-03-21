@@ -70,7 +70,13 @@ export function ContactForm(props) {
             </label>
           </div>
           <div className="col-9">
-            <input id="option3" type="radio" name="yo" value="yo" />
+            <input
+              id="option3"
+              type="radio"
+              name="yo"
+              value="yo"
+              style={{ verticalAlign: "top" }}
+            />
             <TextareaAutosize className={optionTextInput} minRows="1" />
           </div>
         </div>
