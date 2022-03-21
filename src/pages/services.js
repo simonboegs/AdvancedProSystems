@@ -18,34 +18,34 @@ const content = {
       <h2>Process Consulting and Calibration</h2>
       <h3>Upstream Process Consulting</h3>
       <ul>
-      <li>Bioreactor specification
-      <li>Sensors, Sampling solutions
-      <li>Automation
-      <li>Integration
+        <li>Bioreactor specification</li>
+        <li>Sensors, Sampling solutions</li>
+        <li>Automation</li>
+        <li>Integration</li>
       </ul>
       <h3>Downstream Process Consulting</h3>
       <ul>
-      <li>Filtration
-      <li>Chromatography
-      <li>Separations
-      <li>Drying
+        <li>Filtration</li>
+        <li>Chromatography</li>
+        <li>Separations</li>
+        <li>Drying</li>
       </ul>
       <h3>Calibration –instruments measuring</h3>
       <ul>
-      <li>Temperature
-      <li>Pressure
-      <li>Flow
-      <li>Mass
-      <li>Optical
-      <li>Volumetric
-      <li>Dimensional
+        <li>Temperature</li>
+        <li>Pressure</li>
+        <li>Flow</li>
+        <li>Mass</li>
+        <li>Optical</li>
+        <li>Volumetric</li>
+        <li>Dimensional</li>
       </ul>
       <h3>NIST traceable “cradle to grave” calibration</h3>
       <ul>
-      <li>Performance
-      <li>Logging
-      <li>SOPs
-      <li>Records management
+        <li>Performance</li>
+        <li>Logging</li>
+        <li>SOPs</li>
+        <li>Records management</li>
       </ul>
       <h3>Validation – IOQ generation, execution and reports</h3>
     </div>
