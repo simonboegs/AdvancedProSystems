@@ -2,9 +2,9 @@ import * as React from "react";
 //import "bootstrap";
 import { useViewport } from "../Layout";
 import { Card } from "./Card";
-import card1Img from "../../images/card1-01a.jpg";
-import card2Img from "../../images/card2-01a.jpg";
-import card3Img from "../../images/card3-01a.jpg";
+import card1Img from "../../images/card1-gears-01.jpg";
+import card2Img from "../../images/card2-lab-01.jpg";
+import card3Img from "../../images/card3-stainless-01.jpg";
 const bootstrap =
   typeof window !== `undefined` ? require("bootstrap/dist/css/bootstrap.min.css") : null;
 

@@ -9,7 +9,7 @@ import { Section } from "../components/Section";
 import heroImg from "../images/hero-home-01a-big.jpg";
 import padding from "./index";
 import imgSection1 from "../images/random2.jpg";
-import imgSection2 from "../images/hero-services-01a.jpg";
+import imgSection2 from "../images/hero-lab-01.jpg";
 import imgSection3 from "../images/card1-01a.jpg";
 
 const content = {
