@@ -52,7 +52,7 @@ const content = {
   ),
   section2: (
     <div>
-      <h2>Warranty, Industrial Service Plans</h2>
+      <h2>Laboratory, Industrial Service Plans</h2>
       <div className="p-4">
         <p>
           OEM Post Sale Services Management
