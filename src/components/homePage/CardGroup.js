@@ -23,6 +23,8 @@ export function CardGroup(props) {
             body=""
             img={card1Img}
             imgHeight={props.imgHeight}
+            noButton
+            link="/services"
           />
         </div>
         <div className="col">
@@ -31,6 +33,8 @@ export function CardGroup(props) {
             body=""
             img={card2Img}
             imgHeight={props.imgHeight}
+            noButton
+            link="/services#services_2"
           />
         </div>
         <div className="col">
@@ -39,6 +43,8 @@ export function CardGroup(props) {
             body=""
             img={card3Img}
             imgHeight={props.imgHeight}
+            noButton
+            link="/products"
           />
         </div>
       </div>

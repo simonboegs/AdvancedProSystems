@@ -31,8 +31,7 @@ export function CredentialGroup(props) {
                 />
               </div>
               <div className="col-6">
-                <CredentialCard title="Validations: IOPQ Installation, Operation + Process Qualification
-" text="Temp mapping, autoclaves, incubators, cold rooms." />
+                <CredentialCard title="Validations: IOPQ Installation, Operation + Process Qualification" text="Temp mapping, autoclaves, incubators, cold rooms." />
               </div>
             </div>
           </div>
