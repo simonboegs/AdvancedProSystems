@@ -13,12 +13,19 @@ import { Layout } from "../components/Layout";
 const content = {
   section1: (
     <div>
-      <h2>APS help optimize your bioprocessing</h2>
+      <h2>APS helps optimize your bioprocesses in the laboratory and in the plant</h2>
       <p>
-        Founded in 2017 after more than 30 years of experience providing installation, calibration
-        and integration services.
+        APS was founded in 2017 with 35+ years experience providing installation, calibration, and integration services.
       </p>
-      <p>Our systems are designed to optimize our customers’ processes.</p>
+      <p>
+        Our systems are designed for scalability across platforms to optimize and control our customers’ bio processes. 
+        Through our expertise in instrumentation, calibration and maintenance, we design, build, integrate, and modify systems that get you results quickly while effectively maintaining and managing with predictable expenditures and budget. 
+        Customers rely on us to help keep their laboratory assets productive and rapidly scale their processes. 
+        We do this by providing expertise in the design and optimization of your upstream and downstream processes, and then specifying the components and equipment that best help you achieve those goals.
+      </p>
+      <p>
+        We do this in partnership with leaders in laboratory and industrial bioprocess instruments, sensors, software, and equipment.
+      </p>
     </div>
   ),
 };

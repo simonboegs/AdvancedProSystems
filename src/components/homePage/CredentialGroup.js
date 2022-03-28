@@ -22,7 +22,7 @@ export function CredentialGroup(props) {
                 />
               </div>
               <div className="col-6">
-                <CredentialCard title="ISO/IEC 17025:2017 Accredidation" text="Laboratory and Industrial scale consistency, quality and reliability." />
+                <CredentialCard title="ISO/IEC 17025:2017 Compliant" text="Laboratory and Industrial scale consistency, quality and reliability." />
               </div>
               <div className="col-6">
                 <CredentialCard
