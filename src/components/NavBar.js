@@ -61,6 +61,11 @@ export function NavBar(props) {
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/products" className="nav-link" activeClassName="active" aria-current="page">
+              Products
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to="/about" className="nav-link" activeClassName="active" aria-current="page">
               About
             </Link>
