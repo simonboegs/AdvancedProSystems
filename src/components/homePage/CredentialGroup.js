@@ -18,11 +18,11 @@ export function CredentialGroup(props) {
               <div className="col-6">
                 <CredentialCard
                   title="cGMP trained and fully qualified."
-                  text="Manufacturing Practice regulations enforced by the FDA"
+                  text="FDA Good Manufacturing Practice regulation compliant."
                 />
               </div>
               <div className="col-6">
-                <CredentialCard title="ISO/IEC 17025:2017 Accredidation" text="Lab consistency." />
+                <CredentialCard title="ISO/IEC 17025:2017 Accredidation" text="Laboratory and Industrial scale consistency, quality and reliability." />
               </div>
               <div className="col-6">
                 <CredentialCard
@@ -31,7 +31,8 @@ export function CredentialGroup(props) {
                 />
               </div>
               <div className="col-6">
-                <CredentialCard title="Certified System 4" text="Description" />
+                <CredentialCard title="Validations: IOPQ Installation, Operation + Process Qualification
+" text="Temp mapping, autoclaves, incubators, cold rooms." />
               </div>
             </div>
           </div>

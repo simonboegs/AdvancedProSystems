@@ -8,7 +8,7 @@ export function Footer(props) {
       <div className="container-lg">
         <div className="row">
           <div className="col">
-            <p className="text-start">©2021 All rights reserved</p>
+            <p className="text-start">©2022 All rights reserved</p>
           </div>
           <div className="col">
             <p className="text-end">

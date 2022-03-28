@@ -3,10 +3,10 @@ import { NavBar } from "../components/NavBar";
 import { Hero } from "../components/homePage/Hero";
 import { People } from "../components/aboutPage/People";
 import { Footer } from "../components/Footer";
-import heroImg from "../images/hero-portrait-01.jpg";
+import imgSection1 from "../images/hero-portrait-01.jpg";
+import heroImg from "../images/hero-home-01a-big.jpg";
 import padding from "./index";
 import { Section } from "../components/Section";
-import imgSection1 from "../images/random1.jpeg";
 import imgSection2 from "../images/random3.jpeg";
 import { Layout } from "../components/Layout";
 

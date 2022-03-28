@@ -52,23 +52,38 @@ const content = {
   ),
   section2: (
     <div>
-      <h2>Warranty, Maintenance, and Service Plans</h2>
-      <p>
-        Our support/service plans provide you with prompt and courteous service engineers,
-        including:
-      </p>
-      <ul class="list-group list-group-numbered">
-        <li class="list-group-item border-0 bg-transparent">
-          Same-day or next-day services, or will perform calibrations at our controlled laboratory.
-        </li>
-        <li class="list-group-item border-0 bg-transparent">
-          Customized certificates to meet your business's unique requirements.{" "}
-        </li>
-        <li class="list-group-item border-0 bg-transparent">
-          Program management services including documentation, certificate management, and
-          maintenance scheduling.
-        </li>
-      </ul>
+      <h2>Warranty, Industrial Service Plans</h2>
+      <div className="p-4">
+        <p>
+          OEM Post Sale Services Management
+        </p>
+        <ul class="list-group list-group-numbered mb-3">
+          <li class="list-group-item border-0 bg-transparent">
+            Installation
+          </li>
+          <li class="list-group-item border-0 bg-transparent">
+            Calibration
+          </li>
+          <li class="list-group-item border-0 bg-transparent">
+            Integration
+          </li>
+          <li class="list-group-item border-0 bg-transparent">
+            On-site services
+          </li>
+          <li class="list-group-item border-0 bg-transparent">
+            Mail-in or Remote Service Center repairs
+          </li>
+          <li class="list-group-item border-0 bg-transparent">
+            Warranty Record and Services Management
+          </li>
+        </ul>
+        <p>
+          Laboratory/Plant - automation, integration and maintenance
+        </p>
+        <p>
+          Labor Services - field and contract service
+        </p>
+      </div>
     </div>
   ),
 };
