@@ -151,10 +151,9 @@ const ServicesPage = () => {
           </div>
         </div>
         <div className="row justify-content-center py-4">
-          <div className="col-5">
+          <div className="col-6">
             <h3>Validation – IOQ generation, execution and reports</h3>
           </div>
-          <div className="col-5"></div>
         </div>
       </div>
       <a id="services_2" />
