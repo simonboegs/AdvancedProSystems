@@ -108,8 +108,8 @@ const ServicesPage = () => {
       <div className="container-lg my-4">
         <h2>Process Consulting and Calibration</h2>
         <div className="row justify-content-center py-4">
-          <div className="col-5">
-            <h3>Upstream Process Consulting</h3>
+          <div className="col-4">
+            <h3 className="h4">Upstream Process Consulting</h3>
             <ul>
               <li>Bioreactor specification</li>
               <li>Sensors, Sampling solutions</li>
@@ -117,8 +117,8 @@ const ServicesPage = () => {
               <li>Integration</li>
             </ul>
           </div>
-          <div className="col-5">
-            <h3>Downstream Process Consulting</h3>
+          <div className="col-4">
+            <h3 className="h4">Downstream Process Consulting</h3>
             <ul>
               <li>Filtration</li>
               <li>Chromatography</li>
@@ -126,10 +126,8 @@ const ServicesPage = () => {
               <li>Drying</li>
             </ul>
           </div>
-        </div>
-        <div className="row justify-content-center py-4">
-          <div className="col-5">
-            <h3>Calibration – instruments measuring</h3>
+          <div className="col-4">
+            <h3 className="h4">Calibration – instruments measuring</h3>
             <ul>
               <li>Temperature</li>
               <li>Pressure</li>
@@ -140,8 +138,10 @@ const ServicesPage = () => {
               <li>Dimensional</li>
             </ul>
           </div>
-          <div className="col-5">
-            <h3>NIST traceable “cradle to grave” calibration</h3>
+        </div>
+        <div className="row justify-content-center py-4">
+          <div className="col-4">
+            <h3 className="h4">NIST traceable “cradle to grave” calibration</h3>
             <ul>
               <li>Performance</li>
               <li>Logging</li>
@@ -149,10 +149,13 @@ const ServicesPage = () => {
               <li>Records management</li>
             </ul>
           </div>
-        </div>
-        <div className="row justify-content-center py-4">
-          <div className="col-6">
-            <h3>Validation – IOQ generation, execution and reports</h3>
+          <div className="col-4">
+            <h3 className="h4">Validation – IOQ generation, execution and reports</h3>
+            <ul>
+              <li>IOQ generation</li>
+              <li>IOQ execution</li>
+              <li>IOQ reports</li>
+            </ul>
           </div>
         </div>
       </div>
