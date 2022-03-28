@@ -129,7 +129,7 @@ const ServicesPage = () => {
         </div>
         <div className="row justify-content-center py-4">
           <div className="col-5">
-            <h3>Calibration –instruments measuring</h3>
+            <h3>Calibration – instruments measuring</h3>
             <ul>
               <li>Temperature</li>
               <li>Pressure</li>
