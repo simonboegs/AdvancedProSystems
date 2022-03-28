@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import logoImg from "../images/logo.png";
+import logoImgNew from "../images/logo-advancedprosystems-02c.png"
 import justify from "../images/justify.svg";
 import x from "../images/x-lg.svg";
 import { useViewport } from "./Layout";
@@ -46,7 +47,7 @@ export function NavBar(props) {
     <div className="container">
       <div className="d-flex flex-wrap justify-content-center align-items-center py-2">
         <Link to="/" className="d-flex align-items-center me-md-auto text-decoration-none">
-          <img class="bi me-2" height="100px" src={logoImg} />
+          <img class="bi me-2" height="100px" src={logoImgNew} />
         </Link>
         <ul className="nav nav-pills align-items-center">
           <li className="nav-item">
