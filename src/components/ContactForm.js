@@ -101,10 +101,12 @@ export function ContactForm(props) {
       </form> */}
       <form hidden method="post" name="contact" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
+        <input type="hidden" name="radioSelection" value={formData.radioSelection}></input>
+        <input type="hidden" name="name" value={formData.name}></input>
+        <button type="submit">Submit</button>
       </form>
       <form onSubmit={handleSubmit} name="contact" method="post" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
-        <input type="hidden" name="radioSelection" value={formData.radioSelection}></input>
         <div className={formContainer}>
           <h1 className="text-center">Get More Info</h1>
           <div id="options" onChange={(e) => setRadioSelection(e.target.value)} className="row justify-content-center py-2 gy-2" name="radioSelection">
