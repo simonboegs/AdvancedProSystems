@@ -17,13 +17,20 @@ export function ContactForm(props) {
   const { width } = useViewport();
   const breakpoint = 768;
 
+  const optionsMsgs = {
+    "option1": "I have equipment that needs to get serviced.",
+    "option2": "I need to plan services for equipment I do not yet have.",
+    "option3": "I need equipment!"
+  }
+
   const [formData, setFormData] = React.useState({
     country: "United States",
     region: "",
     name: "",
     email: "",
     phone: "",
-    radioSelection: "option1"
+    radioSelection: "option1",
+    message: ""
   });
 
   const handleChange = e => {
@@ -65,8 +72,14 @@ export function ContactForm(props) {
   };
 
   const handleSubmit = e => {
-    console.log("form submit");
-    console.log(formData);
+    if (formData.radioSelection != "option4") {
+      setFormData((prevState) => {
+        return {
+          ...prevState,
+          message: optionsMsgs[formData.radioSelection]
+        }
+      })
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -74,7 +87,9 @@ export function ContactForm(props) {
     })
     .then(() => alert("Success!"))
     .catch(error => alert(error));
-    e.preventDefault()
+    e.preventDefault();
+    console.log("form submit");
+    console.log(formData);
   }
 
   const encode = (data) => {
@@ -110,19 +125,19 @@ export function ContactForm(props) {
             <div className="col-9">
               <input id="option1" type="radio" value="option1" name="option1" checked={formData.radioSelection == "option1"}/>
               <label className={optionLabel} for="option1">
-                I have equipment that needs to get serviced.
+                {optionsMsgs.option1}
               </label>
             </div>
             <div className="col-9">
               <input id="option2" type="radio" value="option2" name="option2" checked={formData.radioSelection == "option2"}/>
               <label className={optionLabel} for="option2">
-                I need to plan services for equipment I do not yet have.
+                {optionsMsgs.option2}
               </label>
             </div>
             <div className="col-9 align-items-center">
               <input id="option3" type="radio" value="option3" name="option3" checked={formData.radioSelection == "option3"}/>
               <label className={optionLabel} for="option3">
-                I need equipment!
+                {optionsMsgs.option3}
               </label>
             </div>
             <div className="col-9">
@@ -134,7 +149,7 @@ export function ContactForm(props) {
                 style={{ verticalAlign: "top" }}
                 checked={formData.radioSelection == "option4"}
               />
-              <TextareaAutosize className={optionTextInput} minRows="1" />
+              <TextareaAutosize className={optionTextInput} minRows="1" name="message" onChange={handleChange}/>
             </div>
           </div>
           <div className="row justify-content-center py-2 gy-2">
