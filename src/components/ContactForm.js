@@ -94,7 +94,7 @@ export function ContactForm(props) {
         padding: "20px",
       }}
     >
-      <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
         <div className={formContainer}>
           <h1 className="text-center">Get More Info</h1>
