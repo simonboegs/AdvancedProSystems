@@ -60,7 +60,13 @@ const HomePage = () => {
         imgCols="7"
         content={content.section2}
       />
+      <form name="yo" netlify>
+        <input type="hidden" name="form-name" value="yo"></input>
+        <input name="input1"></input>
+        <button type="submit">Submit</button>
+      </form>
     </Layout>
+    
   );
 };
 
