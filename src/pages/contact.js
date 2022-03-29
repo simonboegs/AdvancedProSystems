@@ -13,10 +13,12 @@ const ContactPage = () => {
       {/* <Hero height="200px" img={heroImg} title="Contact Us" body="" /> */}
       <form hidden method="post" name="contact" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
-        <input type="hidden" name="radioSelection" ></input>
         <input type="hidden" name="name"></input>
+        <input type="hidden" name="radioSelection" ></input>
         <input type="hidden" name="phone"></input>
         <input type="hidden" name="email"></input>
+        <input type="hidden" name="country"></input>
+        <input type="hidden" name="region"></input>
         <button type="submit">Submit</button>
       </form>
       <ContactForm />
