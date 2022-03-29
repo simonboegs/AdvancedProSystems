@@ -53,6 +53,15 @@ export function ContactForm(props) {
     console.log(formData);
   }
 
+  const setMessage = val => {
+    setFormData((prevState) => {
+      return {
+        ...prevState,
+        message: val
+      }
+    });
+  }
+
   const setCountry = (val) => {
     setFormData((prevState) => {
       return {
@@ -78,7 +87,7 @@ export function ContactForm(props) {
           ...prevState,
           message: optionsMsgs[formData.radioSelection]
         }
-      })
+      });
     }
     fetch("/", {
       method: "POST",
@@ -109,33 +118,28 @@ export function ContactForm(props) {
         padding: "20px",
       }}
     >
-      {/* <form method="post" name="testForm" netlify data-netlify="true">
-        <input type="hidden" name="form-name" value="testForm"></input>
-        <input name="input1"></input>
-        <button type="submit">Submit</button>
-      </form> */}
       <form onSubmit={handleSubmit} name="contact" method="post" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
         <div className={formContainer}>
           <h1 className="text-center">Get More Info</h1>
-          <div id="options" onChange={(e) => setRadioSelection(e.target.value)} className="row justify-content-center py-2 gy-2" name="radioSelection">
+          <div id="options" className="row justify-content-center py-2 gy-2" name="radioSelection">
             <div className="col-10">
               <h5>Which best describes you?</h5>
             </div>
             <div className="col-9">
-              <input id="option1" type="radio" value="option1" name="option1" checked={formData.radioSelection == "option1"}/>
+              <input id="option1" type="radio" value="option1" name="option1" checked={formData.radioSelection == "option1"} onChange={(e) => setRadioSelection(e.target.value)}/>
               <label className={optionLabel} for="option1">
                 {optionsMsgs.option1}
               </label>
             </div>
             <div className="col-9">
-              <input id="option2" type="radio" value="option2" name="option2" checked={formData.radioSelection == "option2"}/>
+              <input id="option2" type="radio" value="option2" name="option2" checked={formData.radioSelection == "option2"} onChange={(e) => setRadioSelection(e.target.value)}/>
               <label className={optionLabel} for="option2">
                 {optionsMsgs.option2}
               </label>
             </div>
             <div className="col-9 align-items-center">
-              <input id="option3" type="radio" value="option3" name="option3" checked={formData.radioSelection == "option3"}/>
+              <input id="option3" type="radio" value="option3" name="option3" checked={formData.radioSelection == "option3"} onChange={(e) => setRadioSelection(e.target.value)}/>
               <label className={optionLabel} for="option3">
                 {optionsMsgs.option3}
               </label>
@@ -148,8 +152,9 @@ export function ContactForm(props) {
                 name="option4"
                 style={{ verticalAlign: "top" }}
                 checked={formData.radioSelection == "option4"}
+                onChange={(e) => setRadioSelection(e.target.value)}
               />
-              <TextareaAutosize className={optionTextInput} minRows="1" name="message" onChange={handleChange}/>
+              <TextareaAutosize className={optionTextInput} minRows="1" name="message" onChange={(e) => setMessage(e.target.value)}/>
             </div>
           </div>
           <div className="row justify-content-center py-2 gy-2">
