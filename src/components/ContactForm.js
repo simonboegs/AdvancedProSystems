@@ -103,19 +103,19 @@ export function ContactForm(props) {
               <h5>Which best describes you?</h5>
             </div>
             <div className="col-9">
-              <input id="option1" type="radio" value="option1" checked={formData.radioSelection == "option1"}/>
+              <input id="option1" type="radio" value="option1" name="option1" checked={formData.radioSelection == "option1"}/>
               <label className={optionLabel} for="option1">
                 I have equipment that needs to get serviced.
               </label>
             </div>
             <div className="col-9">
-              <input id="option2" type="radio" value="option2" checked={formData.radioSelection == "option2"}/>
+              <input id="option2" type="radio" value="option2" name="option2" checked={formData.radioSelection == "option2"}/>
               <label className={optionLabel} for="option2">
                 I need to plan services for equipment I do not yet have.
               </label>
             </div>
             <div className="col-9 align-items-center">
-              <input id="option3" type="radio" value="option3" checked={formData.radioSelection == "option3"}/>
+              <input id="option3" type="radio" value="option3" name="option3" checked={formData.radioSelection == "option3"}/>
               <label className={optionLabel} for="option3">
                 I need equipment!
               </label>
@@ -125,6 +125,7 @@ export function ContactForm(props) {
                 id="option4"
                 type="radio"
                 value="option4"
+                name="option4"
                 style={{ verticalAlign: "top" }}
                 checked={formData.radioSelection == "option4"}
               />
