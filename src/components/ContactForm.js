@@ -94,12 +94,15 @@ export function ContactForm(props) {
         padding: "20px",
       }}
     >
-      <form method="post" name="testForm" netlify data-netlify="true">
+      {/* <form method="post" name="testForm" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="testForm"></input>
         <input name="input1"></input>
         <button type="submit">Submit</button>
+      </form> */}
+      <form hidden method="post" name="contact" netlify data-netlify="true">
+        <input type="hidden" name="form-name" value="contact"></input>
       </form>
-      <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true">
+      <form onSubmit={handleSubmit} name="contact" method="post" netlify data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
         <input type="hidden" name="radioSelection" value={formData.radioSelection}></input>
         <div className={formContainer}>
