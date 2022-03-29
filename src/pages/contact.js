@@ -20,6 +20,10 @@ const ContactPage = () => {
         <input name="phone"></input>
         <input name="email"></input>
       </form> */}
+      <form name="yo" netlify>
+        <input type="hidden" name="form-name" value="yo"></input>
+        <input name="input1"></input>
+      </form>
     </Layout>
   );
 };
