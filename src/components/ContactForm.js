@@ -30,7 +30,8 @@ export function ContactForm(props) {
     email: "",
     phone: "",
     radioSelection: "option1",
-    message: ""
+    textArea: "",
+    message: optionsMsgs.option1
   });
 
   const handleChange = e => {
@@ -40,26 +41,40 @@ export function ContactForm(props) {
         [e.target.name]: e.target.value
       }
     });
-    console.log(formData);
   }
 
   const setRadioSelection = val => {
+    let message = "";
+    if (val == "option4") {
+      message = formData.textArea;
+    }
+    else {
+      message = optionsMsgs[val];
+    }
     setFormData((prevState) => {
       return {
         ...prevState,
-        radioSelection: val
+        radioSelection: val,
+        message: message
       }
     });
-    console.log(formData);
   }
 
-  const setMessage = val => {
+  const setTextArea = val => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        message: val
+        textArea: val,
       }
     });
+    if (formData.radioSelection == "option4") {
+      setFormData((prevState) => {
+        return {
+          ...prevState,
+          message: val
+        }
+      });
+    }
   }
 
   const setCountry = (val) => {
@@ -81,14 +96,6 @@ export function ContactForm(props) {
   };
 
   const handleSubmit = e => {
-    if (formData.radioSelection != "option4") {
-      setFormData((prevState) => {
-        return {
-          ...prevState,
-          message: optionsMsgs[formData.radioSelection]
-        }
-      });
-    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -154,7 +161,7 @@ export function ContactForm(props) {
                 checked={formData.radioSelection == "option4"}
                 onChange={(e) => setRadioSelection(e.target.value)}
               />
-              <TextareaAutosize className={optionTextInput} minRows="1" name="message" onChange={(e) => setMessage(e.target.value)}/>
+              <TextareaAutosize className={optionTextInput} minRows="1" name="message" onChange={(e) => setTextArea(e.target.value)}/>
             </div>
           </div>
           <div className="row justify-content-center py-2 gy-2">
