@@ -96,6 +96,7 @@ export function ContactForm(props) {
     >
       <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true">
         <input type="hidden" name="form-name" value="contact"></input>
+        <input type="hidden" name="radioSelection" value={formData.radioSelection}></input>
         <div className={formContainer}>
           <h1 className="text-center">Get More Info</h1>
           <div id="options" onChange={(e) => setRadioSelection(e.target.value)} className="row justify-content-center py-2 gy-2" name="radioSelection">
@@ -152,6 +153,8 @@ export function ContactForm(props) {
             </div>
             <div class="w-100"></div>
           </div>
+          <input type="hidden" name="country" value={formData.country}></input>
+          <input type="hidden" name="region" value={formData.region}></input>
           <div className="row justify-content-center py-2">
             <div className="col-5">
               <CountryDropdown
