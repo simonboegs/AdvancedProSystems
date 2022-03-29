@@ -16,6 +16,12 @@ const content = {
                     <li>Non-Invasive Flowmeters sized from 0 mL/min to 140,000 mL/min.</li>
                     <li>Closed loop Flow Controllers.</li>
                 </ul>
+                <h3><a href="https://hamiltoncompany.com/">Hamilton Instruments</a></h3>
+                <ul>
+                    <li>pH, DO, CO2 sensors</li>
+                    <li>Conductivity sensors</li>
+                    <li>Cell density sensors</li>
+                </ul>
                 <h3>Advanced Process Systems</h3>
                 <ul>
                     <li>Bioreactors sized from 1L - 50,000L</li>
