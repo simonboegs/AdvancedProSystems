@@ -23,6 +23,7 @@ const ContactPage = () => {
       <form name="yo" netlify>
         <input type="hidden" name="form-name" value="yo"></input>
         <input name="input1"></input>
+        <button type="submit">Submit</button>
       </form>
     </Layout>
   );
