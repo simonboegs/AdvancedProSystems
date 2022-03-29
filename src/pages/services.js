@@ -150,11 +150,11 @@ const ServicesPage = () => {
             </ul>
           </div>
           <div className="col-4">
-            <h3 className="h4">Validation – IOQ generation, execution and reports</h3>
+            <h3 className="h4">Validation</h3>
             <ul>
               <li>IOQ generation</li>
-              <li>IOQ execution</li>
-              <li>IOQ reports</li>
+              <li>Execution</li>
+              <li>Reports</li>
             </ul>
           </div>
         </div>
