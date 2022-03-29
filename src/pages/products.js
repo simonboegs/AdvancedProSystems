@@ -14,7 +14,7 @@ const content = {
                 <h3><a href="https://www.sonotecusa.com/">Sonotec</a></h3>
                 <ul>
                     <li>Non-Invasive Flowmeters sized from 0 mL/min to 140,000 mL/min.</li>
-                    <li>Closed loop Flow Controllers.</li>
+                    <li>Closed loop Flow Controllers</li>
                 </ul>
                 <h3><a href="https://hamiltoncompany.com/">Hamilton Instruments</a></h3>
                 <ul>
@@ -25,23 +25,23 @@ const content = {
                 <h3>Advanced Process Systems</h3>
                 <ul>
                     <li>Bioreactors sized from 1L - 50,000L</li>
-                    <li>Chromatography skids.</li>
-                    <li>TFF systems.</li>
+                    <li>Chromatography skids</li>
+                    <li>TFF systems</li>
                 </ul>
                 <h3><a href="https://securecell.ch/en/">Securecell</a></h3>
                 <ul>
-                    <li>Lucullus analytical lab management and automation software.</li>
-                    <li>Numera automated sampling.</li>
+                    <li>Lucullus analytical lab management and automation software</li>
+                    <li>Numera automated sampling</li>
                 </ul>
                 <h3><a href="https://www.bluesens.com/us/">BlueSens</a></h3>
                 <ul>
-                    <li>Full range of gas analyzers,</li>
+                    <li>Full range of gas analyzers</li>
                     <li>Gas analysis systems</li>
                 </ul>
                 <h3><a href="https://chemglass.com/">Chemglass Life Sciences</a></h3>
                 <ul>
                     <li>Labware</li>
-                    <li>Specialty/custom glass, machining solutions.</li>
+                    <li>Specialty/custom glass, machining solutions</li>
                 </ul>
             </div>
         </div>
